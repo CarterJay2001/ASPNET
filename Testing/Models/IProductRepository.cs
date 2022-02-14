@@ -8,8 +8,9 @@ namespace Testing
         public IEnumerable<Product> GetAllProducts();
         public Product GetProduct(int id);
         public void UpdateProduct(Product product);
-        public IEnumerable<Category> Categories { get; set; }
+        public void InsertProduct(Product productToInsert);
         public IEnumerable<Category> GetCategories();
         public Product AssignCategory();
+        public void DeleteProduct(Product product);
     }
 }
